@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    color-scheme: light;
+    font-family: "Segoe UI", sans-serif;
+    color: #18312d;
+    background: #f1f5f1;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #f1f5f1 0%, #e5eee8 55%, #dce9e6 100%);
+}
+
+.page-shell {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    padding: 24px;
+}
+
+.welcome-panel,
+.login-panel {
+    width: min(100%, 440px);
+    padding: 42px;
+    border: 1px solid #d6e2dc;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 20px 60px rgb(24 49 45 / 9%);
+}
+
+.eyebrow {
+    margin: 0 0 14px;
+    color: #347665;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    line-height: 1.15;
+}
+
+.intro {
+    margin: 12px 0 28px;
+    color: #63736e;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 34px;
+    color: #347665;
+    text-decoration: none;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    min-height: 46px;
+    padding: 10px 12px;
+    border: 1px solid #bdcbc4;
+    border-radius: 5px;
+    color: inherit;
+    font: inherit;
+}
+
+input:focus-visible,
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #9bc9b5;
+    outline-offset: 2px;
+}
+
+.button-link {
+    display: inline-flex;
+    min-height: 46px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+    padding: 0 18px;
+    border: 0;
+    border-radius: 5px;
+    background: #245f51;
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button-link:hover {
+    background: #194b40;
+}
+
+.form-message {
+    min-height: 1.5em;
+    margin: 4px 0 0;
+    color: #9b3e32;
+    font-size: 14px;
+}
+
+@media (max-width: 480px) {
+    .welcome-panel,
+    .login-panel {
+        padding: 30px 24px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
